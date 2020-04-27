@@ -26,3 +26,6 @@
 <br>https://github.com/s1oz/embykey/blob/master/guomi.cer 右键另存为文件名为guomi.cer的文件后安装相应设备上<br>
 <br>IOS需要安装后在设置--通用--关于手机--证书信任设置中把信任证书<br>
   
+  
+<br>感谢 时光轴 星辰 不会魔法的思思 教程引路<br>
+  
