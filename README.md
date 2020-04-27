@@ -24,6 +24,9 @@
 
     10.0.0.10 mb3admin.com
 	
+如在路由劫持,无需其他设置
+如没有在路由劫持,需修改每个客户端劫持
+
 0. op类路由可以直接在路由中添加额外的hosts文件
 <br/>登陆ssh输入以下命令
 `vi /etc/myhosts`
@@ -62,7 +65,9 @@ curl https://mb3admin.com/admin/service/registration/validateDevice/666
 ```
 查看是否正确返回值
 
+#### 祝大家玩得开心
 
+<br/>![](https://github.com/s1oz/embyonekey/blob/master/done.png)
 
 #### 客户端证书安装
 如服务器正常白嫖后,客户端还是无法正确显示,一般是证书不正确,请在客户端安装证书
