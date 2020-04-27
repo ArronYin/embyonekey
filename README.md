@@ -1,35 +1,79 @@
-# embyonekey
-群辉emby套件版服务端一点五键白嫖
-<br>左点点右点点,算你一点五键吧<br>
-<br>前提如下 群辉安装好webstation跟emby<br>
-<br>没有新建任何虚拟主机<br>
-<br>在webstation虚拟主机中按图片中新建虚拟主机<br>
-<br><img src="https://github.com/s1oz/embyonekey/blob/master/webstation.png"><br>
-<br>然后登录群辉root账户后运行<br>
-</p><pre><code>wget -N --no-check-certificate &quot;https://raw.githubusercontent.com/s1oz/embyonekey/master/embyonekey.sh&quot; &amp;&amp; chmod +x embyonekey.sh &amp;&amp; ./embyonekey.sh
-</code></pre><h2>
-<br>
-<br>
-<br>运行完脚本后请将mb3admin劫持到自己nas<br>
-<br>如群辉IP为10.0.0.10<br>
-<br>op类路由命令为<br>
-</p><pre><code>vi /etc/myhosts<br></code></pre><h2>
-<br>10.0.0.10 mb3admin.com<br>
-</p><pre><code>:wq<br></code></pre><h2>
-<br>保存退出后在op中的网络-HOSTS和解析文件-额外的HOSTS文件中加入/etc/myhosts<br>
-<br>群辉修改命令为<br>
-</p><pre><code>vi /etc/hosts<br></code></pre><h2>
-<br>10.0.0.10 mb3admin.com<br>
-</p><pre><code>:wq<br></code></pre><h2>
-<br>保存退出后<br>
-<br>Windows客户端直接在C:\Windows\System32\drivers\etc\hosts文件下加入<br>
-<br>10.0.0.10 mb3admin.com<br>
-<br>Windows 安卓 ios等客户端都要安装下面这个证书<br>
-<br>https://github.com/s1oz/embyonekey/blob/master/guomi.cer 右键另存为文件名为guomi.cer的文件后安装相应设备上<br>
-<br>Windows请将证书安装到此目录<br>
-<br><img src="https://github.com/s1oz/embyonekey/blob/master/window.png"><br>
-<br>IOS需要安装后在设置--通用--关于手机--证书信任设置中把信任证书<br>
-  
-  
-<br>感谢 时光轴 星辰 不会魔法的思思 教程引路<br>
-  
+### embyonekey
+
+- 群辉emby套件版服务端一点五键白嫖
+- 左点点右点点,算你一点五键吧
+
+# 提前说下
+啥也不会瞎捣鼓的
+所以~~~
+请保证在未在Web Station中新建任何虚拟主机
+请按照说明路径正确设置
+出啥问题我也不负责
+
+### 步骤说明
+0. 在群辉中安装好Web Station跟EMBY
+1. 打开Web Station如图所示新建虚拟主机
+![](https://github.com/s1oz/embyonekey/blob/master/webstation.png)
+
+
+
+
+#### 劫持mb3admin伪站
+
+如搭建伪站的NAS地址为10.0.0.10 则如下填写,根据自己实际情况修改
+
+    10.0.0.10 mb3admin.com
+	
+0. op类路由可以直接在路由中添加额外的hosts文件
+登陆ssh输入以下命令
+`vi /etc/myhosts`
+i 进入编辑状态
+输入 `10.0.0.10 mb3admin.com`
+`:wq` 保存退出
+登陆op
+点击网络-HOSTS和解析文件-额外的HOSTS文件中加入
+`/etc/myhosts`
+保存生效
+1. 群辉可以直接登录修改
+登陆ssh输入以下命令
+`vi /etc/hosts`
+i 进入编辑状态
+输入 `10.0.0.10 mb3admin.com`
+`:wq` 保存退出
+2. Windows修改只是路径不同
+直接打开`C:\Windows\System32\drivers\etc\`目录
+修改文件夹中的hosts文件
+	
+### 接下来运行这条脚本
+
+
+以root用户执行命令：`wget -N --no-check-certificate "https://raw.githubusercontent.com/s1oz/embyonekey/master/embyonekey.sh" && chmod +x embyonekey.sh && ./embyonekey.sh`
+
+运行完毕
+可以输入以下命令测试
+```
+nginx -t
+```
+查询是否报错
+```
+curl https://mb3admin.com/admin/service/registration/validateDevice
+curl https://mb3admin.com/admin/service/registration/validateDevice/666
+```
+查看是否正确返回值
+
+
+
+#### 客户端证书安装
+如服务器正常白嫖后,客户端还是无法正确显示,一般是证书不正确,请在客户端安装证书
+```
+https://github.com/s1oz/embyonekey/blob/master/guomi.cer 
+```
+右键另存为文件名为guomi.cer的文件后安装相应设备上
+
+Windows请安装才此目录下
+![](https://github.com/s1oz/embyonekey/raw/master/window.png)
+
+IOS需要安装后在设置--通用--关于手机--证书信任设置中把证书信任
+
+
+## 感谢 时光轴 星辰 不会魔法的思思 教程引路
