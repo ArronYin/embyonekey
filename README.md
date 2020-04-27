@@ -4,7 +4,7 @@
 <br>前提如下 群辉安装好webstation跟emby<br>
 <br>没有新建任何虚拟主机<br>
 <br>在webstation虚拟主机中按图片中新建虚拟主机<br>
-<br><img src="https://github.com/s1oz/embykey/blob/master/webstation.png"><br>
+<br><img src="https://github.com/s1oz/embyonekey/blob/master/webstation.png"><br>
 <br>然后登录群辉root账户后运行<br>
 </p><pre><code>wget -N --no-check-certificate &quot;https://raw.githubusercontent.com/s1oz/embykey/master/embyonekey.sh&quot; &amp;&amp; chmod +x embyonekey.sh &amp;&amp; ./embyonekey.sh
 </code></pre><h2>
