@@ -50,7 +50,7 @@
 以root用户执行命令：<br/>
 </p><pre><code>wget -N --no-check-certificate "https://raw.githubusercontent.com/s1oz/embyonekey/master/embyonekey.sh" && chmod +x embyonekey.sh && ./embyonekey.sh</code></pre><h2>
 
-运行完毕
+<br/>运行完毕
 <br/>可以输入以下命令测试
 ```
 nginx -t
