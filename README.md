@@ -22,6 +22,8 @@
 <br>10.0.0.10 mb3admin.com<br>
 </p><pre><code>:wq<br></code></pre><h2>
 <br>保存退出后<br>
+<br>Windows客户端直接在C:\Windows\System32\drivers\etc\hosts文件下加入<br>
+<br>10.0.0.10 mb3admin.com<br>
 <br>Windows 安卓 ios等客户端都要安装下面这个证书<br>
 <br>https://github.com/s1oz/embyonekey/blob/master/guomi.cer 右键另存为文件名为guomi.cer的文件后安装相应设备上<br>
 <br>Windows请将证书安装到此目录<br>
