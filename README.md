@@ -6,7 +6,7 @@
 <br>在webstation虚拟主机中按图片中新建虚拟主机<br>
 <br><img src="https://github.com/s1oz/embyonekey/blob/master/webstation.png"><br>
 <br>然后登录群辉root账户后运行<br>
-</p><pre><code>wget -N --no-check-certificate &quot;https://raw.githubusercontent.com/s1oz/embykey/master/embyonekey.sh&quot; &amp;&amp; chmod +x embyonekey.sh &amp;&amp; ./embyonekey.sh
+</p><pre><code>wget -N --no-check-certificate &quot;https://raw.githubusercontent.com/s1oz/embyonekey/master/embyonekey.sh&quot; &amp;&amp; chmod +x embyonekey.sh &amp;&amp; ./embyonekey.sh
 </code></pre><h2>
 <br>
 <br>
