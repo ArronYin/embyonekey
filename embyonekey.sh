@@ -5,5 +5,4 @@ curl https://raw.githubusercontent.com/s1oz/embyonekey/master/mb3admin.com.cert.
 cd /usr/local/etc/nginx/conf.d/*-*-*-*
 wget https://raw.githubusercontent.com/s1oz/embyonekey/master/user.conf
 nginx -s reload
-done
 
