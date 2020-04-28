@@ -9,6 +9,8 @@
 <br/>请保证在未在Web Station中新建任何虚拟主机
 <br/>请按照说明路径正确设置
 <br/>出啥问题我也不负责
+<br/>看不到图片或者脚本无法下载运行的
+<br/>请科学好raw.githubusercontent.com网址
 
 ### 步骤说明
 <br/>0. 在群辉中安装好Web Station跟EMBY
@@ -75,7 +77,7 @@ curl https://mb3admin.com/admin/service/registration/validateDevice/666
 ```
 https://raw.githubusercontent.com/s1oz/embyonekey/master/guomi.cer 
 ```
-右键另存为文件名为guomi.cer的文件后安装相应设备上
+下载此链接文件名为guomi.cer的证书文件后安装相应设备上
 
 Windows请安装才此目录下
 <br/>![](https://raw.githubusercontent.com/s1oz/embyonekey/master/window.png)
