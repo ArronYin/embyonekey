@@ -16,14 +16,16 @@
 <br/>0. 在群辉中安装好Web Station跟EMBY
 <br/>1. 打开Web Station如图所示新建虚拟主机
 <br><img src="https://raw.githubusercontent.com/s1oz/embyonekey/master/webstation.png"><br>
-
-
-
+<br/>2. 打开群辉控制面板-安全性-证书
+<br/>点击新建-添加新证书-导入证书-选择下载的私钥跟证书
+<br><img src="https://raw.githubusercontent.co/s1oz/embyonekey/master/cert0.png"><br>
+<br/>3. 保存后在配置中将mb3admin.com的证书设置为刚导入的的证书
+<br><img src="https://raw.githubusercontent.co/s1oz/embyonekey/master/cert1.png"><br>
 
 
 #### 劫持mb3admin伪站
 
-如搭建伪站的NAS地址为10.0.0.10 则如下填写,根据自己实际情况修改,目的就是劫持域名到nas上
+如搭建伪站的NAS地址为10.0.0.10 则如下填写,根据自己实际情况修改,目的就是劫持域名到搭建的伪站上
 
     10.0.0.10 mb3admin.com
 	
@@ -63,14 +65,15 @@ nginx -t
 ```
 查询是否报错
 ```
-curl https://mb3admin.com/admin/service/registration/validateDevice
-curl https://mb3admin.com/admin/service/registration/validateDevice/666
 ```
-查看是否正确返回值
+
 
 #### 祝大家玩得开心
 
+<br/>如图,打开即可拥有会员黄标
 <br/>![](https://raw.githubusercontent.com/s1oz/embyonekey/master/ko.png)
+<br/>在Emby Premiere中输入任何秘钥都可以激活成功
+<br/>![](https://raw.githubusercontent.com/s1oz/embyonekey/master/ko1.png)
 
 #### 客户端证书安装
 如服务器正常白嫖后,客户端还是无法正确显示,一般是证书不正确,请在客户端安装证书
