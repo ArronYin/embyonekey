@@ -18,9 +18,9 @@
 <br><img src="https://raw.githubusercontent.com/s1oz/embyonekey/master/webstation.png"><br>
 <br/>2. 打开群辉控制面板-安全性-证书
 <br/>点击新建-添加新证书-导入证书-选择下载的私钥跟证书
-<br><img src="https://raw.githubusercontent.co/s1oz/embyonekey/master/cert0.png"><br>
+<br><img src="https://github.com/s1oz/embyonekey/blob/master/cert0.png"><br>
 <br/>3. 保存后在配置中将mb3admin.com的证书设置为刚导入的的证书
-<br><img src="https://raw.githubusercontent.co/s1oz/embyonekey/master/cert1.png"><br>
+<br><img src="https://github.com/s1oz/embyonekey/blob/master/cert1.png"><br>
 
 
 #### 劫持mb3admin伪站
