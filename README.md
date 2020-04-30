@@ -70,6 +70,11 @@ nginx -t
 ```
 查询是否报错
 
+```
+curl https://mb3admin.com/admin/service/registration/validateDevice
+curl https://mb3admin.com/admin/service/registration/validateDevice/666
+```
+ssh中运行命令查看是否正确返回值
 
 #### 祝大家玩得开心
 
